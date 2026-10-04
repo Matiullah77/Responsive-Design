@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.typography,
+.layout {
+  padding: 20px;
+}
+
+.typography h1 { font-size: 22px; }
+.typography h2 { font-size: 18px; }
+.typography h3 { font-size: 16px; }
+.typography p  { font-size: 14px; }
+
+.boxes {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+.box {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 40px 10px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.column-box {
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  padding: 40px 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.page-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.title { font-size: 22px; }
+.intro { display: none; }
+
+.project {
+  background-color: #f1f1f1;
+  margin-bottom: 12px;
+}
+.project h5 { font-size: 16px; }
+.project p  { font-size: 13px; margin: 0; }
+
+.sidebar {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-align: center;
+}
+.sidebar h3 { font-size: 18px; }
+.sidebar p  { font-size: 13px; }
+.about      { display: none; }
+
+.footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+.footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .typography h1 { font-size: 34px; }
+  .typography h2 { font-size: 28px; }
+  .typography h3 { font-size: 24px; }
+  .typography p  { font-size: 18px; }
+
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .title { font-size: 28px; }
+  .intro { display: block; }
+
+  .project { margin-bottom: 20px; }
+  .project h5 { font-size: 20px; }
+  .project p  { font-size: 16px; }
+
+  .sidebar {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .sidebar h3 { font-size: 22px; }
+  .sidebar p  { font-size: 16px; }
+  .about      { display: block; }
+
+  .footer {
+    padding: 25px 0;
+  }
+  .footer p { font-size: 15px; }
+}
+
+@media (min-width: 992px) {
+  .typography h1 { font-size: 48px; }
+  .typography h2 { font-size: 38px; }
+  .typography h3 { font-size: 30px; }
+  .typography p  { font-size: 22px; }
+
+  .boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .title { font-size: 36px; }
+
+  .project { margin-bottom: 25px; }
+  .project h5 { font-size: 24px; }
+  .project p  { font-size: 18px; }
+
+  .sidebar {
+    padding: 30px;
+    margin-top: 0;
+    text-align: left;
+  }
+  .sidebar h3 { font-size: 26px; }
+  .sidebar p  { font-size: 18px; }
+
+  .footer {
+    padding: 35px 0;
+  }
+  .footer p { font-size: 18px; }
+}
